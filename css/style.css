@@ -1,0 +1,78 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+   margin: 0;
+   background-color:#202328;
+   font-family: 'Montserrat';
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul, li, a {
+    text-decoration: none;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, a, ul, span, div {
+    margin: 0;
+    padding: 0;
+}
+
+/* Головна */
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+.block_page {
+
+}
+
+.social_list {
+    display: flex;
+    flex-direction: column;
+   margin-left: 60px;
+}
+
+.social_item {
+    width: 39px;
+    height: 39px;
+    border: 1.5px solid #C1A564;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 75px;
+
+    position: relative;
+}
+
+.nav_list::after {
+    position: absolute;
+    content: 'МОЇ';
+
+    color: #636568;
+    font-size: 89px;
+    font-weight: 900;
+    
+    transform: rotate(90deg) translate(25%, 130%);
+}
+
+.nav_item {
+    font-size: 42px;
+    font-weight: 300;
+    color: #636568;
+}
