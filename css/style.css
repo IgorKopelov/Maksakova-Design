@@ -30,7 +30,7 @@ p, a, ul, span, div {
 /* Головна */
 .wrapper {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     overflow: hidden;
     width: 100vw;
     height: 100vh;
@@ -255,14 +255,41 @@ input, textarea {
 }
 
 /* Map blok */
-
 .map_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     font-weight: 300;
+}
+
+.map {
+    width: 61.2vw;
+    height: 42.6vh;
+
+    position: relative;
+    overflow: hidden;
+
+    border: 1px solid #C1A564;
+    margin-bottom: 2.0vw;
+}
+
+.iframe_map {
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 .map_address {
     font-size: 1.6vw;
+    align-self: center;
+    margin-bottom: 2.0vw;
 }
 .map_mail, .map_tel {
     font-size: 1.2vw;
+    align-self: center;
+}
+
+.map_tel {
+    margin-bottom: 2.0vw;
 }
