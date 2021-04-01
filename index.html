@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>Maksakova|Design</title>
 </head>
 
@@ -25,20 +24,14 @@
 
             <div class="block_social">
                 <ul class="social_list">
-                    <li class="social_item">
-                        <a target="_blank" href="https://www.facebook.com/maksakovadesign-587597978582560/">
-                            <img class="social_img" src="./images/Сгруппировать 4.svg" alt="faceebok">
-                        </a>
+                    <li class="social_item fb">
+                        <a target="_blank" href="https://www.facebook.com/maksakovadesign-587597978582560/">.</a>
                     </li>
-                    <li class="social_item">
-                        <a target="_blank" href="https://www.instagram.com/maksakovadesign/?igshid=1u3k29672hvlq">
-                            <img class="social_img" src="./images/Сгруппировать 5.svg" alt="instagram">
-                        </a>
+                    <li class="social_item instagram">
+                        <a target="_blank" href="https://www.instagram.com/maksakovadesign/?igshid=1u3k29672hvlq">.</a>
                     </li>
-                    <li class="social_item">
-                        <a target="_blank" href="#!">
-                            <img class="social_img" src="./images/Сгруппировать 6.svg" alt="be">
-                        </a>
+                    <li class="social_item be">
+                        <a target="_blank" href="https://www.facebook.com/SvetlanaDiary">.</a>
                     </li>
                 </ul>
             </div> <!--block_social-->
@@ -58,40 +51,39 @@
         <div class="title_block">
             <h1 class="title_desing">Maksakova Стильно</h1>
             <span class="subtitle_desing">Design Сучасно</span>
-            <a class="desing_link" href="!#">Замовити проект</a>
+            <a class="desing_link btn" href="!#">Замовити проект</a>
+        </div>
+
+        <div class="slick-arrow_block">
+            <span class="line_top"></span>
         </div>
 
         <div class="slider_block">
-            <div class="arrow_blok">
-                <button class=".slick-arrow.slick-prev"></button>
-                <button class=".slick-arrow.slick-next .slick-arrow.slick-disabled"></button>
-            </div>
+
             <div class="slider">
                 <div class="slider_item">
-                    <img class="slider_img" src="./images/158707633_759858018004548_1170293376963382549_n.jpg" alt="img">
+                    <img data-lazy='./images/158707633_759858018004548_1170293376963382549_n.jpg' class="slider_img" src="./images/158707633_759858018004548_1170293376963382549_n.jpg" alt="img">
                 </div>
                 <div class="slider_item">
-                    <img class="slider_img" src="./images/158707633_759858018004548_1170293376963382549_n.jpg" alt="img">
+                    <img class="slider_img" data-lazy='./images/img1.jpg'  src="./images/img1.jpg" alt="img">
                 </div>
                 <div class="slider_item">
-                    <img class="slider_img" src="./images/158707633_759858018004548_1170293376963382549_n.jpg" alt="img">
+                    <img class="slider_img" data-lazy='./images/img2.jpg' src="./images/img2.jpg" alt="img">
                 </div>
-            </div>
-            <div class="slick_block">
-                <ul class="slick-dots">
-                    <li class="slick-active"></li>
-                    <li class=""></li>
-                    <li class=""></li>
-                    <li class=""></li>
-                    <li class=""></li>
-                    <li class=""></li>
-                </ul>
-            </div>
+                <div class="slider_item">
+                    <img class="slider_img" data-lazy='./images/img3.jpg' src="./images/img3.jpg" alt="img">
+                </div>
+                <div class="slider_item">
+                    <img class="slider_img" data-lazy='./images/img4.jpg' src="./images/img4.jpg" alt="img">
+                </div>
+            </div> <!--slider-->
+            
         </div>
 
     </div> <!--wrapper-->
 
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>

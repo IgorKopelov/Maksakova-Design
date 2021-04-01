@@ -1,9 +1,12 @@
 $(document).ready(function(){
-    $('.slider_block').slick({
+    $('.slider').slick({
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 700,
         fade: true,
+        zIndex: 0,
+        autoplay: true,
+        appendArrows:$('.slick-arrow_block'),
         cssEase: 'linear'
       });
   });

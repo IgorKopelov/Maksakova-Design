@@ -21,6 +21,10 @@ ul, li, a {
     color: inherit;
 }
 
+li, a, button {
+    cursor: pointer;
+}
+
 h1, h2, h3, h4, h5, h6,
 p, a, ul, span, div {
     margin: 0;
@@ -49,9 +53,9 @@ p, a, ul, span, div {
     display: flex;
     flex: 1 1 auto;
     justify-content: space-between;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100vw;
-    height: 100vh;
+    /* height: 100vmin; */
 
     position: relative;
 }
@@ -112,11 +116,24 @@ p, a, ul, span, div {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow: hidden;
 }
 
 .social_img {
     width: 1.3vw;
-    height: 1.3vw;
+}
+
+.fb {
+    background: url('/images/Сгруппировать 5.svg') center no-repeat;
+}
+
+.instagram {
+    background: url('/images/Сгруппировать 4.svg') center no-repeat
+}
+
+.be {
+    background: url('/images/Сгруппировать 6.svg') center no-repeat
 }
 
 .nav_list {
@@ -142,6 +159,13 @@ p, a, ul, span, div {
     font-size: 2.1vw;
     font-weight: 300;
     color: #636568;
+}
+
+.nav_item:hover {
+    font-weight: 400;
+    color: #A7A7A8;
+
+    transition: 0.1s linear;
 }
 
 .title_block {
@@ -173,17 +197,7 @@ p, a, ul, span, div {
 }
 
 .desing_link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-
-    width: 21.4vw;
-    height: 5.1vw;
-    border: 3px solid #C1A564;
-
-    font-size: 1.7vw;
-    color: #C1A564;
+    align-self: start;
 }
 
 /* Slider */
@@ -195,16 +209,102 @@ p, a, ul, span, div {
 }
 
 .slider {
-    /* display: flex; */
+    position: relative;
 }
 
 .slider_item {
-    
+    /* overflow: hidden; */
+    height: 100%;
 }
+
+.slick-list { 
+    overflow: hidden;
+}
+
+.slick-track{
+    display: flex;
+}
+
 
 .slider_img {
     display: block;
-    max-width: 100%;
+    /* width: 100%; */
+    height: 100vh;
+}
+
+
+.slick-arrow_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 15rem;
+
+    position: absolute;
+    top: 0;
+    left: 45.5%;
+    z-index: 4;
+}
+
+.line_top {
+    width: 0.8rem;
+    height: 12rem;
+    background: #C1A564;
+}
+
+.slick-arrow {
+    width: 5.2rem;
+    height: 5.2rem;
+    border: 3px solid #C1A564;
+    border-radius: 50%;
+
+    font-size: 0;
+    outline: none;
+}
+
+.slick-arrow.slick-prev{
+    background:url('/images/left-arrow.svg') #202328 0 0/ 100% no-repeat;
+}
+
+.slick-arrow.slick-next {
+    background:url('/images/right-arrow.svg') #202328 0 0/ 100% no-repeat;
+}
+
+/* slider_dots */
+
+.slick-dots {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 35%;
+
+    position: absolute;
+
+    top: 90%;
+    left: 70%;
+    z-index: 1000;
+}
+
+.slick-dots li button {
+    opacity: 0;
+    outline: none;                     
+}
+
+.slick-dots li {
+    width: 1.8rem;
+    height: 1.8rem;
+    background: none;
+    border: 2px solid #C1A564;
+    border-radius: 50%;
+}
+
+.slick-dots .slick-active {
+    width: 1.8rem;
+    height: 2.8rem;
+    background: #202328;
+    border: 2px solid #C1A564;
+    border-radius: 45%;
 }
 
 /* Popap */
@@ -291,8 +391,16 @@ input, textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    align-self:center;
+    flex-grow: inherit;
+    align-items: center;
     font-weight: 300;
+
+    margin-right: 10%;
+}
+
+.map_block a.btn {
+    margin: 0;
 }
 
 .map {
