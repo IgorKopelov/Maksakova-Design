@@ -53,9 +53,9 @@ p, a, ul, span, div {
     display: flex;
     flex: 1 1 auto;
     justify-content: space-between;
-    /* overflow: hidden; */
-    width: 100vw;
-    /* height: 100vmin; */
+    overflow: hidden;
+    max-width: 100vw;
+    height: 100vh;
 
     position: relative;
 }
@@ -97,8 +97,16 @@ p, a, ul, span, div {
 
 .logo_letter {
     width: 2.6vw;
+    max-height: 34rem;
     padding-left: 1.0vw;
     border-right: 1px solid #C1A564;
+}
+
+.logo_letter-img {
+    color: #636568;
+
+    font-weight: 300;
+    font-size: 3.2rem;
 }
 
 .social_list {
@@ -162,7 +170,7 @@ p, a, ul, span, div {
 }
 
 .nav_item:hover {
-    font-weight: 400;
+    font-weight: 300;
     color: #A7A7A8;
 
     transition: 0.1s linear;
@@ -184,7 +192,7 @@ p, a, ul, span, div {
 
 .title_desing {
     align-self: center;
-    font-size: 5.1vw;
+    font-size: 5vw;
     font-weight: 400;
 }
 
@@ -198,14 +206,22 @@ p, a, ul, span, div {
 
 .desing_link {
     align-self: start;
+    background: #202328;
 }
 
 /* Slider */
 
 .slider_block {
-    /* width: 47.45vw; */
-    width: 50%;
-    overflow: hidden;
+    max-width: 50%;
+    /* overflow: hidden; */
+}
+
+.slider_block_portholio {
+    max-width: 70%;
+}
+
+.slider_block-portholio {
+    max-width: 70%;
 }
 
 .slider {
@@ -213,8 +229,7 @@ p, a, ul, span, div {
 }
 
 .slider_item {
-    /* overflow: hidden; */
-    height: 100%;
+    margin: 0;
 }
 
 .slick-list { 
@@ -223,15 +238,18 @@ p, a, ul, span, div {
 
 .slick-track{
     display: flex;
+    overflow: hidden;
 }
 
 
 .slider_img {
-    display: block;
-    /* width: 100%; */
+    width: 100%;
     height: 100vh;
-}
+    object-fit: cover;
 
+    background-position:center center;
+    background-size:cover;
+}
 
 .slick-arrow_block{
     display: flex;
@@ -242,8 +260,12 @@ p, a, ul, span, div {
 
     position: absolute;
     top: 0;
-    left: 45.5%;
-    z-index: 4;
+    left: 46%;
+    z-index: 5;
+}
+
+.slick-arrow_portholio {
+    left: 25.8%;
 }
 
 .line_top {
@@ -277,12 +299,11 @@ p, a, ul, span, div {
     justify-content: space-around;
     align-items: center;
 
-    width: 35%;
-
+    width: 30%;
     position: absolute;
 
-    top: 90%;
-    left: 70%;
+    top: 88%;
+    left: 60%;
     z-index: 1000;
 }
 
@@ -444,8 +465,9 @@ input, textarea {
 
 .card_flex {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    gap: 0.8vw;
 }
 
 .card {
@@ -492,4 +514,43 @@ input, textarea {
     font-weight: 300;
     margin-bottom: 0.8rem;
     /* overflow: auto; */
+}
+
+/* Portholio */
+
+.portholio {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.portholio_title {
+    font-size: 5rem;
+    font-weight: 400;
+
+    margin-bottom: 3rem;
+}
+
+.portholio-btn {
+    background: #202328;
+
+    margin-left: 0;
+    z-index: 6;
+    top: 67%;
+    left: 20%;
+    position: absolute;
+}
+
+/* Laptop */
+@media screen and (max-width: 1370px)  {
+    .social_list {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 3vw;
+    }
+
+    .logo_letter img {
+        border-right: 1px solid #C1A564;
+        height: 80%;
+    }
 }
