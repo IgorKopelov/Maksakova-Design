@@ -134,15 +134,15 @@ p, a, ul, span, div {
 }
 
 .fb {
-    background: url('/images/Сгруппировать 5.svg') center no-repeat;
+    background: url('../images/Сгруппировать 5.svg') center no-repeat;
 }
 
 .instagram {
-    background: url('/images/Сгруппировать 4.svg') center no-repeat
+    background: url('../images/Сгруппировать 4.svg') center no-repeat
 }
 
 .be {
-    background: url('/images/Сгруппировать 6.svg') center no-repeat
+    background: url('../images/Сгруппировать 6.svg') center no-repeat
 }
 
 .nav_list {
@@ -172,7 +172,7 @@ p, a, ul, span, div {
 
 .nav_item:hover {
     font-weight: 300;
-    color: #A7A7A8;
+    color: #C1A564;
 
     transition: 0.1s linear;
 }
@@ -286,11 +286,11 @@ p, a, ul, span, div {
 }
 
 .slick-arrow.slick-prev{
-    background:url('/images/left-arrow.svg') #202328 0 0/ 100% no-repeat;
+    background:url('../images/left-arrow.svg') #202328 0 0/ 100% no-repeat;
 }
 
 .slick-arrow.slick-next {
-    background:url('/images/right-arrow.svg') #202328 0 0/ 100% no-repeat;
+    background:url('../images/right-arrow.svg') #202328 0 0/ 100% no-repeat;
 }
 
 /* slider_dots */
@@ -406,6 +406,7 @@ input, textarea {
 .form_link {
     box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.7);
     margin-left: 30%;
+    background: #202328;
 }
 
 /* Map blok */
@@ -562,3 +563,121 @@ input, textarea {
         left: 24%;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .logo_letter-img {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 476px) {
+
+    /* block_page */
+    .logo_letter, .block_social{
+        display: none;
+    }
+
+    .first_letеer {
+        font-size: 16vw;
+    }
+    .first_letеer::after {
+        font-size: 4vw;
+    }
+
+    .nav_item {
+        font-size: 5vw;
+    }
+
+    .slick-arrow_block {
+        display: none;
+    }
+
+    .portholio_title {
+        font-size: 3rem;
+    }
+
+    .slider_block {
+        max-width: 65%;
+    }
+
+    /* title_block */
+
+    .title_desing {
+        font-size: 6vw;
+    }
+
+    .subtitle_desing {
+        font-size: 4.5vw ;
+    }
+
+    .btn {
+        width: 30vw;
+        height: 6vh;
+        font-size: 2.8vw;
+    }
+
+    /* Map */
+
+    .map_block {
+        position: absolute;
+        top: 40%;
+        left: 20%;
+    }
+
+    .map_address {
+        font-size: 5vw;
+    }
+
+    .map_mail, .map_tel {
+        font-size: 4vw;
+    }
+
+    /* Price */
+
+    .price {
+        overflow: scroll;
+    }
+
+    .price_block {
+        position: absolute;
+        top: 35%;
+        left: 10%;
+        z-index: 100;
+    }
+
+    .card {
+        width: 120rem;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .card_title, .price_coin {
+        font-size: 5vw;
+    }
+
+    .price_text, .price_subtitle  {
+        font-size: 4vw;
+    }
+
+    /* form */
+
+    .form_flex {
+        position: absolute;
+        top: 35%;
+        left: 0;
+    }
+
+    .form_input {
+        width: 48vw;
+    }
+
+    .form_textarea {
+        width: 96vw;
+    }
+
+    input, textarea {
+        font-weight: 300;
+        font-size: 2.8vw;
+    }
+    
+  }

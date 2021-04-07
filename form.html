@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/1617789281.ico">
     <title>Maksakova|Design</title>
 </head>
 
@@ -48,13 +49,20 @@
         </div>
 
         <div class="form_flex">
-            <form class="form_inheryt" action="#" method="POST" >
+            <form id="contact-form" class="form_inheryt" action="#" method="POST" >
                 <div class="flex_input">
-                    <input class="form_style form_input form_name" type="text" name="name" placeholder="Як до вас краще звертатись?">
-                    <input id="form_email" class="form_style form_input" type="email" name="name" placeholder="Ваші контактні данні (email, телефон)">
+                    <input class="form_style form_input form_name" id="form_name" type="text" name="name" placeholder="Як до вас краще звертатись?">
+                    <div class="help-block with-errors"></div>
+
+                    <input id="form_email" class="form_style form_input" type="email" name="name" placeholder="Введіть адресу електронної пошти*" data-error="Потрібен чинний електронний лист.">
+                    <div class="help-block with-errors"></div>
                 </div>
-                <textarea id="form_message" class="form_style form_textarea" name="name"  cols="20" rows="5" placeholder="Ваші побажання щодо дизайну"></textarea>
-                <a class="form_link btn" href="./popap.html">Замовити проект</a>
+                <textarea id="form_message" class="form_style form_textarea" name="name" rows="4"
+                required 
+                data-error="Ваші побажання щодо дизайну"
+                placeholder="Ваші побажання щодо дизайну"></textarea>
+                <div class="help-block with-errors"></div>
+                <input class="form_link btn" type="submit" name="btn_submit" id="button_contacts" value="Замовити проект">
             </form>
         </div>
         
