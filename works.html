@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk-ua">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/1617789281.ico">
     <title>Maksakova|Design</title>
 </head>
 
 <body>
     <!-- Головна -->
-    <div class="wrapper">
+    <div class="wrapper works_scroll">
         <div class="block_page">
             <div class="block_logo">
                 <span class="first_letеer">M</span>
@@ -25,17 +26,17 @@
             <div class="block_social">
                 <ul class="social_list">
                     <li class="social_item fb">
-                        <a target="_blank" href="https://www.facebook.com/maksakovadesign-587597978582560/">.</a>
+                        <a target="_blank" href="https://www.facebook.com/maksakovadesign-587597978582560/">..</a>
                     </li>
                     <li class="social_item instagram">
-                        <a target="_blank" href="https://www.instagram.com/maksakovadesign/?igshid=1u3k29672hvlq">.</a>
+                        <a target="_blank" href="https://www.instagram.com/maksakovadesign/?igshid=1u3k29672hvlq">..</a>
                     </li>
                     <li class="social_item be">
                         <a target="_blank" href="https://auth.services.adobe.com/ru_RU/deeplink.html#/progressive-profile/date-of-birth/">.</a>
                     </li>
                 </ul>
             </div> <!--block_social-->
-            
+
             <div class="block_nav">
                 <nav>
                     <ul class="nav_list">
@@ -48,13 +49,28 @@
             </div>
         </div>
 
-        <div class="popap_flex">
-            <h2 class="title_popap">Дякуємо за звернення!</h2>
-            <p class="subtitle_popap">Ми звяжемося з Вами <br>при першій можливості</p>
-            <a class="desing_link btn" href="./index.html">На Головну сторінку</a>
-        </div>
+        <section class="works">
+            <h2 class="title_work">Портфолио</h2>
+
+            <div class="works_flex">
+                <div class="works_card works1">
+                    <div class="figure_card">
+                        <a href="./works_picture.html"><span>м.Київ, вул.Є.Коновальця,36</span></a>
+                    </div>
+                </div>
+
+                <div class="works_card works2">
+                    <div class="figure_card">
+                        <a href="./works_picture2.html"><span>ЖК "Новопечерська Вежа"</span></a>
+                    </div>
+                </div>
+            </div>
+        </section> <!--works-->
         
     </div> <!--wrapper-->
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
