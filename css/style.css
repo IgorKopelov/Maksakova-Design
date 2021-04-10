@@ -599,7 +599,7 @@ input, textarea {
 .picture_flex {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -748,6 +748,17 @@ input, textarea {
     input, textarea {
         font-weight: 300;
         font-size: 2.8vw;
+    }
+
+    /* Works */
+    .title_work {
+        font-size: 3rem;
+    }
+
+    .works_picture {
+        max-width: 24rem;
+        height: 36rem;
+        overflow: hidden;
     }
     
   }
